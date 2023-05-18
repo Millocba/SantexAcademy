@@ -7,24 +7,15 @@ html {
 }
 
 p {
-    margin-right: 2em;
+    margin-right: 1.8rem;
     font-weight: bold;
-    font-size: 0.9em;
-    font-weight: 500;
-}
-
-button {
-    background-color: white;
-    border-radius: 30px;
-    padding: 0px 1.5em;
-    height: 2.5em;
-    border: 2px solid black;
-    font-size: 0.8em;
-    width: 8em;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 div#navbar-left img {
-    width: 8em;
+    width: 8rem;
 }
 
 @media (width >= 2500px) {
@@ -38,3 +29,624 @@ div#navbar-left img {
         font-size: 32px;
     }
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+h2, h4{
+    padding: 1.25rem 0;
+    font-weight: 600;
+}
+body {
+
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+}
+  
+div#introduction-text h1 {
+    margin: 0 23%;
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+button.redondo {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 1.5625rem;
+    padding: 0px 1.2rem;
+    height: 32px;
+    font-size: .8rem;
+}
+div#header {
+    border-bottom: 1px solid gray;
+    display: flex;
+    margin: 0px;
+    padding: 1.5% 2%;
+    justify-content:space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; 
+    z-index: 999;
+}
+button:hover{
+    background-color: #000;
+    color: white;
+}
+div#header-right p:hover{
+    color: blueviolet;
+}
+div#header-right img:hover{
+    background-color: rgb(7, 176, 7);
+    color: #fff;
+    filter: invert();   
+}
+
+
+div#header-right{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+}
+div#header-right .icono{
+    width: .9rem;
+    height: .9rem;
+    margin-left: 1.5625rem;
+}
+main#introduction {
+    padding: 10rem 6.25rem;
+}
+div#introduction-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5625rem;
+    gap: 1.25rem;
+}
+button.morado{
+    border-color: blueviolet;
+    color: blueviolet;
+}
+button.morado:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+.submenu-container {
+    position: relative;
+  }
+  
+  .submenu {
+    border: 1px solid #000;
+    border-top: none;
+    z-index: 1;
+    display: none;
+    position: absolute;
+    top: 150%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+  }
+  
+  .submenu-container:hover .submenu {
+    display: block;
+    width: 16rem;
+    transform: translateY(-.6rem);
+  }
+  
+  .submenu a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: .5rem;
+    margin: .5rem;
+  }
+  
+  .submenu a:hover {
+    background-color: #eaeaea;
+    display: block;
+    background-color: #fff;
+    color: blueviolet;
+  }
+    
+
+section#impacto{
+    max-width: 100%;
+    background-color:black;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 10% 5%;  
+}
+div#impacto-text{
+    width: 50%;
+    padding-left: 13%;
+}
+h2{
+    font-size: 1.9rem;
+}
+div#impacto-text p{
+    max-width: 25rem;
+}
+div#impacto-counters{
+    width: 50%;
+    padding: 0 5%;
+    display: flex;
+    gap: 8%;
+}
+
+div.impacto-counters-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+div#impacto-counters h2{
+    font-size: 3.125rem;
+    margin: 0%;
+    padding: 1.5rem 0 0 0;
+}
+span.morado{
+    color: blueviolet;
+    font-size: 1.5625rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+div#impacto-counters p{
+    margin: 0%;
+    color: darkgray;
+    font-size: .9rem;
+    margin-top: 1%;
+    display: inline-block;
+    align-self: center;
+}
+div#background{
+    width: 100%;
+    background-image: url(twp-home.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 35rem;
+    margin-bottom: 3.125rem;
+}
+.programas{
+    padding: 0 5%;
+}
+article.articulo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+div.imagen{
+    width: 48%;
+    margin-bottom: 2%;
+}
+div.imagen img{
+    width: 100%;
+    border-radius: 0 2.5rem 2.5rem 2.5rem;
+}
+div.imagen2 img{
+    border-radius: 2.5rem 2.5rem 0 2.5rem;
+
+}
+
+div.texto{
+    width: 48%;
+    font-size: .9rem;
+    padding: 0 3.125rem;
+}
+
+div.texto img{
+    width: 50%;
+}
+
+div.texto p{
+    padding: 0 1.125rem .625rem 0;
+}
+h4{
+    font-size: 1.375rem;
+}
+section#cards{
+    background-color: #f4f4f5;
+    max-width: 100%;
+    padding: 2% 5%;
+}
+section#cards .contenedor{
+    display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+section#cards h2{
+    margin: 0;
+    padding: 3.125rem 0 0;
+    padding-bottom: 0;
+}
+section#cards .card{
+    width: 18%;
+    min-width: 10%;
+    margin-top: 2%;
+    background-color: white;
+    border-radius: 1rem 1rem 1rem 0;
+}
+section#cards .card img{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+section#cards .card-text{
+    overflow-wrap: break-word;
+    margin-bottom: 1.125rem;
+}
+section#cards .card-text p{
+    text-align:center;
+    font-weight: 400;
+    font-size: .9rem;
+    color: gray;
+    margin-left: 0;
+    margin-right: 0;
+}
+section#cards .card-text h5{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+}
+section#cards .card-text span{
+    font-weight: 900;
+}
+
+section#cards .card-text a{
+    text-decoration: none;
+    border: .125rem solid #000;
+
+    display: inline-block;
+    border-radius: 3.125rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    color: #000;
+}
+section#cards .card-text a:hover{
+    background-color: blueviolet;
+    color: #fff;
+    border-color: blueviolet;
+}
+section#alianza{
+    padding: 4% 2%;
+}
+section#alianza .swiper {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+section#alianza .swiper img:hover{
+    filter: grayscale(0%);
+}
+section#alianza .swiper img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  width: 2rem;
+  height: 2rem;
+  background-color: #9b9696;
+  opacity: .5;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+    content:"none";
+}
+
+.swiper-button-next {
+    background-image: url("angle-right-solid.svg") !important;
+    left:inherit;
+}
+
+.swiper-button-prev {
+    background-image: url("angle-left-solid.svg") !important;
+    right: 0;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    filter: invert();
+    background-size: .5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: rgb(43, 226, 61);
+
+}
+
+footer{
+
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    padding: 2% 5%;
+}
+.logo-footer{
+    display: flex;
+    align-items: center;
+}
+.logo-footer img{
+    width: 80%;
+}
+.columna{
+    width: 25%;
+    justify-content: center;
+    color: darkgrey;
+}
+.link a:hover{
+    color: #fff;
+}
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link a{
+    text-decoration: none;
+    color: darkgray;
+    font-size: .9rem;
+    font-weight: 600;
+}
+.link img{
+    width: .9rem;
+    height: .9rem;
+    filter: invert(100%);
+}
+.columna h5{
+    font-size: .8rem;
+    font-weight: 200;
+}
+.menu-toggle {
+    display: none;
+}
+.menu-items{
+    display: none;
+}
+.lupa{
+    display: none;
+}
+.menu-buscar{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    div#header-right {
+        display: none;
+    }
+    div#header{
+        position: relative;
+        padding: 20px 20px;
+    }
+
+    main#introduction{
+        width: 100%;
+        padding: 100px 20px;
+    }
+    main#introduction h1{
+        margin: 0 auto;
+    }
+
+    section#impacto{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    div#impacto-text{
+        width: 100%;
+        padding: 20px;
+        line-height: 1.5;
+    }
+    div#impacto-text h2{
+        font-weight: 600;
+        padding-bottom: 5px;
+        
+    }
+    div#impacto-counters{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    div.impacto-counters-box{
+        padding-bottom: 50px;
+    }
+    div#background{
+        display: none;
+    }
+    div.imagen{
+        width: 100%;
+        padding: 20px 0;
+    }
+    div.texto{
+        width: 100%;
+    }
+    div.texto img{
+        width: 100%;
+    }
+    h2, h4{
+        padding-top: 60px;
+        font-weight: 600;
+    }
+    div.texto p{
+        padding: 15px 0;
+        line-height: 1.5;
+    }
+    article.articulo {
+        gap:0;
+
+    }
+    section#cards .card{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    section#cards .card h5{
+        padding: 10px 0;
+    }
+    section#cards .card p{
+        padding-bottom: 10px;
+    }
+    section#cards .card-text a{
+        padding-top: 0;
+    }
+
+    footer{
+        display: block;
+        padding: 100px 20px 300px 20px;
+    }
+    .logo-footer{
+        width: 80%;
+        margin: 20px 0;
+    }
+    .columna{
+        width: 100%;
+        padding: 20px 0;
+    }
+    .columna h5{
+        width: 100%;
+    }
+    .link{
+        display: block;
+    }
+    
+/*hamburguesa*/
+
+    .lupa{
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 30%;
+        left: 70%;
+        cursor: pointer;
+        z-index: 9999;
+    }
+
+    .lupa span{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        
+        transform-origin: 10px 50%;
+        transition: all 300ms;
+        z-index: 999;
+    }
+    
+    .active1-lupa1{
+        margin-top: -15px;
+        background-color: #000 !important;
+        width: 30px;
+        transform: rotate(45deg);
+    }
+    .active2-lupa2{
+        margin-top: -15px;
+        background-color: #000 !important;
+        width: 30px;
+        transform: rotate(-45deg);
+    }
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 25%;
+        left: 90%;
+        cursor: pointer;
+        z-index: 9999;
+    }
+      
+    .menu-toggle span{
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+        margin-top: 6px;
+        transform-origin: 0px 100%;
+        transition: all 300ms;
+    }
+    .active{
+        transform: rotate(45deg) translate(-2px, 1px);
+    }
+    .active1{
+        opacity: 0;
+        margin-left: -30px;
+    }
+    .active2{
+        transform: rotate(-45deg) translate(-4px, 2px);
+    }
+    
+
+    .menu-items{
+        display: none;
+        position: fixed;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.95);
+        width: 100%;
+        height: 100%;
+        padding: 50px;
+    }
+    .menu-buscar input[type="search"]{
+        width: 300px;
+        height: 50px;
+        font-size: 36px;
+        border: 0px;
+        border-bottom: 1px solid #000;
+    }
+    .menu-buscar{
+        display: none;
+        position: fixed;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.95);
+
+        height: 100%;
+        padding: 100px;
+    }
+    .opacar{
+        opacity: 0;
+    }
+    .menu-items p{
+       
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+
+
+    .show-menu {
+    display: block;
+    }
+
+  }

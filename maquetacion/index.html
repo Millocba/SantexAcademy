@@ -4,44 +4,334 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cluster 2 - X Academy</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&display=swap%27" rel="stylesheet">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css">
+  <title>Xacademy Clase 1 maquetacion</title>
 </head>
-<body style="margin: 0;">
-    <div id="navbar" style="display: flex; border-bottom: 1px solid gray; padding: 14px 800px; justify-content: space-between;">
-        <div id="navbar-left">
-            <img src="technology-with-purpose.svg">
+<body>
+    <div id="header">
+        <div id="header-left">
+            <img src="logo.svg" alt="log">
         </div>
-        <div id="navbar-right" style="display: flex; align-items: center;">
-            <p>Nosotros</p>
-            <p>Programas</p>
-            <p>Capacitaciones</p>
-            <p>Alianzas</p>
-            <p>Contacto</p>
-            <button>Sumate +</button>
+        <div id="header-right">
+            <a href="nosotros.html"><p>Nosotros</p></a>
+            <div class="submenu-container">
+              <a href="#programas"><p>Programas</p></a>
+              <div class="submenu">
+                <a href="#">xAcademy</a>
+                <a href="#">Robótica educativa: La tecnología del futuro</a>
+              </div>
+            </div>
+            <div class="submenu-container">
+                <a href="#capacitacion"><p>Capacitaciones</p></a>
+                <div class="submenu">
+                  <a href="#">Seguridad informática para infancias</a>
+                  <a href="#">Estafas Virtuales: ¿como protegernos?</a>
+                </div>
+            </div>
+            <a href="#alianza"><p>Alianzas</p></a>
+            <a href="#footer"><p>Contacto</p></a>
+            <button class="redondo">Sumate +</button>
+            <div class="icono"><img src="instagram.svg" alt="insta"></div>
+            <div class="icono"><img src="linkedin.svg" alt="linkind"></div>
         </div>
+          
+
+       
+        <div class="lupa">
+          <img src="magnifying-glass-solid.svg" alt="lupa">
+          <span class="bar-lupa1"></span>
+          <span class="bar-lupa2"></span>
+        </div>
+        <div class="menu-buscar">
+          <input type="search" placeholder="Search...">
+        </div>
+        <div class="menu-toggle">
+          <span class="bar"></span>
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+        </div>
+        <div class="menu-items">
+          <div class="menu-item"><img src="logo.svg" alt="logo">
+          <p>Nosotros</p>
+          <p>Programas</p>
+          <p>Capacitaciones</p>
+          <p>Alianzas</p>
+          <p>Contacto</p>
+          <p>Sumate +</p>
+          <p>Instagram</p>
+          <p>linkedin</p></div>
+        </div>
+
     </div>
-    <div id="contact-form">
-        <form style="margin: 0 300px;" action="">
+
+
+    <main id="introduction">
+        <div id="introduction-text">
+            <h1>Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a través de la tecnología.</h1>
+        </div>
+        <div id="introduction-actions">
+            <button class="redondo">Contactanos ➔</button>
+            <button class="redondo morado">Sumate +</button>
+        </div>
+    </main>
+    <section id="impacto">
+        <div id="impacto-text">
             <div>
-                <input type="text" placeholder="Nombre y Apellido">
-                <input type="email" placeholder="Email">
-                <select name="" id="">
-                    <option value="">Programas</option>
-                    <option value="">Capacitaciones</option>
-                </select>
+                <h2>.Impacto</h2>
             </div>
             <div>
-                <textarea name="" cols="30" rows="10"></textarea>
+                <p>
+                    Buscamos construir alianzas y fortalecer vínculos para generar una transformación real en la comunidad. Trabajamos para acercar la tecnología innovadora y disruptiva del sector privado hacia el sector social.
+                </p>
             </div>
-            <div>
-                <button>Enviar</button>
-            </div>
-        </form>
+        </div>
+        <div id="impacto-counters">
+          <div class="impacto-counters-box">
+            <h2><span id="localidadesCounter" class="counter">0</span></h2>
+            <p>Localidades</p>
+          </div>
+          <div class="impacto-counters-box">
+            <h2><span class="morado">+</span><span id="mentoresCounter" class="counter">0</span></h2>
+            <p>Mentores</p>
+          </div>
+          <div class="impacto-counters-box">
+            <h2><span id="participantesCounter" class="counter">0</span></h2>
+            <p>Participantes</p>
+          </div>
+        </div>
+    </section>
+    <div id="background">
+        
     </div>
+    <section id="programas" class="programas">
+        <h2>.Programas</h2>
+        <article class="articulo">
+            <div class="imagen">
+                <img src="xacademy-01-800x533.jpg" alt="programas">
+            </div>
+            <div class="texto">
+                <img src="xacademy.svg" alt="Academy">
+                <p>xAcademy es un programa de formación en tecnología llevado adelante por la Fundación Tecnología con Propósito junto a Santex que busca promover un cambio positivo en la comunidad a través de la educación en IT, apuntando a lograr la inserción laboral de personas en el mundo tecnológico.</p>
+                <button class="redondo">Más info ➔</button>
+            </div>
+        </article>
+        <article class="articulo">
+            <div class="texto">
+                <h4>Robótica educativa: la tecnología del futuro</h4>
+                <p>Durante el curso, los alumnos y alumnas a través de la robótica desarrollan la curiosidad, el autodidactismo y las habilidades blandas necesarias para afrontar la revolución tecnológica del siglo XXI.</p>
+                <button class="redondo">Más info ➔</button>
+            </div>
+            <div class="imagen imagen2">
+                <img src="robotica-educativa-07-800x533.jpg" alt="robotica">
+            </div>
+        </article>
+    </section>
+    <section id="capacitaciones" class="programas">
+        <h2>.Capacitaciones</h2>
+        <article class="articulo">
+            <div class="imagen">
+                <img src="estafas-virtuales-04-800x603.jpg" alt="estafas">
+            </div>
+            <div class="texto">
+                <h4>Estafas virtuales: ¿cómo protegernos?</h4>
+                <p>Los canales de comunicación a través de medios digitales cobraron gran protagonismo a partir de la pandemia. Al mismo tiempo, se perfeccionan cada vez más rápido las modalidades de estafas y fraudes virtuales. En esta capacitación vas a aprender diferentes tips y consejos útiles para navegar de manera más segura.</p>
+                <button class="redondo">Más info ➔</button>
+            </div>
+        </article>
+        <article class="articulo">
+            <div class="texto">
+                <h4>Seguridad informática para infancias</h4>
+                <p>¿Navegamos seguros en internet? La propuesta es una charla para niños y niñas donde se brindan herramientas de seguridad y autocuidado digital.</p>
+                <button class="redondo">Más info ➔</button>
+            </div>
+            <div class="imagen imagen2">
+                <img src="seguridad-informatica-para-infancias-800x531.jpg" alt="seguridad">
+            </div>
+        </article>
+    </section>
+    <section id="cards">
+        <h2>.Equipo</h2>
+        <div class="contenedor">
+            <div class="card">
+                <div class="card-image">
+                  <img src="twp-juan.png" alt="Juan">
+                </div>
+                <div class="card-text">
+                  <h5>Juan Santiago</h5>
+                  <p>Presidente</p>
+                  <p>
+                    <a href="https://www.linkedin.com/in/juan-santiago-1461942/" target="_blank">
+                      <span>in</span>
+                    </a>
+                  </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                  <img src="twp-walter.png" alt="Walter">
+                </div>
+                <div class="card-text">
+                  <h5>Walter Abrigo</h5>
+                  <p>Secretario</p>
+                  <p>
+                    <a href="https://www.linkedin.com/in/walterabrigo/" target="_blank">
+                      <span>in</span>
+                    </a>
+                  </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                  <img src="twp-gabriela.png" alt="gaby">
+                </div>
+                <div class="card-text">
+                  <h5>Gabriela Fernandez</h5>
+                  <p>Comisión Directiva</p>
+                  <p>
+                    <a href="https://www.linkedin.com/in/gabriela-fernandez-53475b20/" target="_blank">
+                      <span>in</span>
+                    </a>
+                  </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                  <img src="twp-gabriel.png" alt="gabriel">
+                </div>
+                <div class="card-text">
+                  <h5>Gabriel Dubini</h5>
+                  <p>Tesorero</p>
+                  <p>
+                    <a href="https://technologywithpurpose.org/#" target="_blank">
+                      <span>in</span>  
+                    </a>
+                  </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                  <img src="twp-florencia.png" alt="flor">
+                </div>
+                <div class="card-text">
+                  <h5>Florencia D’Agostino</h5>
+                  <p>Dirección Ejecutiva</p>
+                  <p>
+                    <a href="https://www.linkedin.com/in/florencia-dagostino/" target="_blank">
+                      <span>in</span>
+                    </a>
+                  </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                  <img src="twp-celeste.png" alt="cele">
+                </div>
+                <div class="card-text">
+                  <h5>Celeste Torresi</h5>
+                  <p>Comisión Directiva</p>
+                  <p>
+                    <a href="https://www.linkedin.com/in/celeste-torresi-77094739/" target="_blank">
+                      <span>in</span>
+                    </a>
+                  </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                  <img src="twp-lucia.png" alt="lu">
+                </div>
+                <div class="card-text">
+                  <h5>Lucia Jaimez</h5>
+                  <p>Directora Academy</p>
+                  <p>
+                    <a href="https://www.linkedin.com/in/luc%C3%ADa-jaimez-365416151/" target="_blank">
+                      <span>in</span>
+                    </a>
+                  </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                  <img src="agustin-chino.png" alt="agustin">
+                </div>
+                <div class="card-text">
+                  <h5>Agustin Chino</h5>
+                  <p>Coord. Área Inclusión Social</p>
+                  <p>
+                    <a href="https://www.linkedin.com/in/agustin-chino-7b5561274/" target="_blank">
+                      <span>in</span>
+                    </a>
+                  </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                  <img src="enzo-dotto.png" alt="enzo">
+                </div>
+                <div class="card-text">
+                  <h5>Enzo Dotto</h5>
+                  <p>Relaciones Institucionales</p>
+                  <p>
+                    <a href="https://www.linkedin.com/in/agustin-chino-7b5561274/" target="_blank">
+                      <span>in</span>
+                    </a>
+                  </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="alianza">
+      <h2>.Alianza</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="alianza-att-400x151.png" alt="Imagen 1"></div>
+          <div class="swiper-slide"><img src="alianza-banco-alimentos-cordoba-400x151.png" alt="Imagen 2"></div>
+          <div class="swiper-slide"><img src="alianza-banco-galicia-400x151.png" alt="Imagen 3"></div>
+          <div class="swiper-slide"><img src="alianza-fundacion-scrum-400x151.png" alt="Imagen 4"></div>
+          <div class="swiper-slide"><img src="alianza-grupo-inteligencia-educativa-400x151.png" alt="Imagen 5"></div>
+          <div class="swiper-slide"><img src="alianza-jesus-maria-400x151.png" alt="Imagen 6"></div>
+          <div class="swiper-slide"><img src="alianza-municipalidad-concordia-400x151.png" alt="Imagen 7"></div>
+          <div class="swiper-slide"><img src="alianza-municipalidad-morteros-1-400x151.png" alt="Imagen 8"></div>
+          <div class="swiper-slide"><img src="alianza-naranja-400x151.png" alt="Imagen 9"></div>
+          <div class="swiper-slide"><img src="alianza-santex-400x151.png" alt="Imagen 10"></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> 
+      </div>
+      
+    </section>
+    <footer id="footer">
+      <div class="logo-footer columna">
+        <img src="technology-with-purpose-white.svg" alt="logo">
+      </div>
+      <div class="columna">
+        <h5>Trabajamos para acercar la tecnología innovadora y disruptiva del sector privado hacia el sector social.</h5>
+      </div>
+      <div class="columna link">
+        <p>
+          <a href="#">NOSOTROS</a><br>
+          <a href="#">CONTACTO</a>
+        </p>
+      </div>
+      <div class="columna link">
+        <p>
+          <a href="#">PROGRAMAS</a><br>
+          <a href="#">CAPACITACIONES</a>
+        </p>    
+      </div>
+      <div class="columna link">
+        <p>
+          <a href="#"><img src="instagram.svg" alt=""> INSTAGRAM</a><br>
+          <a href="#"><img src="linkedin.svg" alt=""> LINKEDIN</a>
+        </p>
+      </div>
+    </footer>
+    <script src="Actions.js"></script>
 </body>
 </html>
